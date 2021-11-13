@@ -2,6 +2,10 @@
     <div class="col-md-6 mx-auto py-5 text-center">
         <div class="card">
             <h1>Dashboard</h1>
+            <img src="{{user.image}}" alt="" class="image-profile">
+            <h3 class="fw-400">Hello <span class="fw-700">{{user.displayName}}</span></h3>
+            <a href="/auth/logout" onclick="return confirm('Are you sure to logout?')" class="btn btn-danger">Log
+                out</a>
         </div>
     </div>
 </div>

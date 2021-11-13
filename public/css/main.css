@@ -4,6 +4,8 @@
     --primary-hover-color: rgb(247, 125, 26);
     --secondary-color: rgb(22, 22, 22);
     --secondary-hover-color: rgb(3, 3, 3);
+    --danger-color: rgb(246, 17, 17);
+    --danger-hover-color: rgb(221, 5, 5);
     --gray: #eaeaea;
 }
 
@@ -33,7 +35,7 @@ body {
     line-height: 1.5;
     font-weight: 500;
     font-size: .8rem;
-    border-radius: 2px;
+    border-radius: 4px;
     vertical-align: middle;
     cursor: pointer;
     -webkit-user-select: none;
@@ -72,6 +74,15 @@ body {
     background-color: var(--secondary-hover-color);
 }
 
+.btn-danger{
+    color: var(--white);
+    background-color: var(--danger-color);
+}
+
+.btn-danger:hover{
+    background-color: var(--danger-hover-color);
+}
+
 .text-center{
     text-align: center;
 }
@@ -90,4 +101,21 @@ body {
     border: none;
     background-color: var(--gray);
     height: 1px;
+}
+
+.image-profile{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+.fw-700{
+    font-weight: 700;
 }

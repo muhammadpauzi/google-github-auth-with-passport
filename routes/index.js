@@ -6,7 +6,7 @@ router.get('/', ensureGuest, (req, res) => {
 });
 
 router.get('/dashboard', ensureAuth, (req, res) => {
-    return res.render('dashboard');
+    return res.render('dashboard', { user: req.user });
 });
 
 module.exports = router;

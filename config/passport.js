@@ -20,12 +20,11 @@ module.exports = (passport) => {
                 where: { authId: profile.id },
             })).toJSON();
 
-            if (user) {
-                return done(null, user);
-            } else {
+            if (!user) {
                 user = await User.create(newUser);
-                return done(null, user);
             }
+
+            return done(null, user);
         } catch (error) {
             console.log(error.message);
         }
