@@ -1,4 +1,6 @@
-const { Sequelize } = require('sequelize');
+const User = require('./User');
 
-const sequelize = new Sequelize();
+User.sync().then(() => 'User table created!');
+// User.sync({ force: true }).then(() => 'User table created!');
 
+module.exports = { User };
